@@ -1,3 +1,11 @@
+/* ._desktop{
+    display: block;
+}
+
+._mobile{
+    display: none;
+} */
+
 body{
     margin: 0;
     width: 100%;
@@ -80,7 +88,7 @@ a{
     padding-bottom: 100px;
 } 
 
-.text-container >div{
+.text-container-home >div{
     margin-bottom: 20px;
 }
 .name-text{
@@ -128,7 +136,14 @@ a{
     font-size: 20px;
     font-weight: 400;
     line-height: 14px;
+    transition: 0.3s;
 }
+
+.talk-btn:hover{
+    transform: translate(0, -5px);
+    border-color:rgb(100, 255, 218);
+}
+
 /* Donut */
 .donut{
     overflow:hidden;
@@ -228,6 +243,11 @@ a{
     text-align: center;
     margin:auto;
     font-family:  "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    transition: 0.3s;
+}
+
+.text-container:hover{
+    transform: translate(0, -10px);
 }
 
 .text-container >img{
@@ -238,15 +258,13 @@ a{
     height: 100px;
     margin-bottom: 30px;
     width: 100px;
+    
 }
 
 .logo-container .text-container{
     padding:20px 20px;
 }
-.logo-container .text-container:hover{
-    box-shadow: 0 0 35px rgba(85, 84, 84, 0.799);
-    transition: all 0.5s ease-in-out 0s;
-}
+
 
 /* Projects */
 .projects{
@@ -324,7 +342,7 @@ a{
 }
 
 .v-description{
-    padding-top: 100px;
+    padding-top: 50px;
     font-family: poppins;
     font-size: 18px;
     font-weight: 400;
@@ -347,10 +365,13 @@ a{
 
 /* contact me */
 
+.contact{
+    padding-bottom: 100px;
+}
 
 .contact-head{
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600;
     line-height: 66px;
     color: white;
@@ -361,7 +382,36 @@ a{
 .contact-desc{
     text-align: center;
     font-family: Clarkson, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 33.6px;
     font-weight: 500;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.contact-menu{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact-fontawe{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    transition: 0.3s;
+}
+
+.contact-fontawe:hover{
+    color: rgb(100, 255, 218);
+    transition-delay: 0.2s;
+    transform: translate(0, -8px);
+}
+
+.mail{
+    font-size: 16px;
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
