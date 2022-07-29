@@ -1,15 +1,23 @@
-/* ._desktop{
+._desktop{
     display: block;
 }
 
 ._mobile{
     display: none;
-} */
+}
 
 body{
     margin: 0;
     width: 100%;
     background-color: black;
+}
+
+.container{
+    color: rgb(136, 146, 176);
+}
+
+.colored-text{
+    color: rgb(100, 255, 218);;
 }
 
 *{
@@ -22,69 +30,60 @@ ul{
 a{
     text-decoration: none;
 }
-.navbar{
-    left: 0px;
-    top: 0px;
-    width:100%;
 
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 50px;
-    z-index: 4;
-    background-color:black;
-    font-size: 14px;
-    /* font-family:"SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace; */
-    font-family: poppins;
+/* Nav bar */
+.main-nav .nav-item{
+    text-align: center;
 }
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
+
+
+.nav-link{
+    color: #ffffffcc!important;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 21px;
+}
+
+.nav-item a:hover{
+    color: rgb(100, 255, 218)!important;
+    transition: all ease 0.5s!important;
+}
+
+.contact-me:hover{
+    color: rgb(100, 255, 218)!important;
+    transition: all ease 0.5s!important;
+}
+
+.nav-item{
+    padding-left: 25px;;
+}
+
+.contact-me{
+    color: #46a0f5!important;
+    padding-right: 50px;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 21px;
+}
+
+.navbar{
+    background-color: black;
 }
 
 .barcode-img{
-    padding-top: 10px;
-}
-.menu li{
-    padding: 20px;
-}
-.logo{
-    height:50px;
-    z-index: 3;
-}
-.logo img{
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-.menu li a{
-    color: #ffffffcc;
-}
-.contact-me{
-    color: #46a0f5;
-    z-index: 3;
+    width: 40px;
+    height: auto;
+    margin-left: 50px;
+    padding-top: 10px
 }
 
-.menu li a:hover{
-    color: rgb(100, 255, 218);
-    transition: all ease 0.5s;
-}
-.contact-me:hover{
-    color: rgb(100, 255, 218);
-    transition: all ease 0.5s;
-}
-
-.container{
-    color: rgb(136, 146, 176);
-}
-
-.colored-text{
-    color: rgb(100, 255, 218);;
-}
 /* Home Section */
 .home{
-    padding-top: 80px;
+    margin-top: 100px;
     padding-bottom: 100px;
 } 
 
@@ -103,6 +102,7 @@ a{
     font-size: 61.376px;
     font-weight: 640;
     line-height: 55.2384px;
+    margin: auto auto;
 }
 
 .start-text{
@@ -159,22 +159,23 @@ a{
     font-weight: 500;
     line-height: 44px;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 75px;
 }
 
 .about-info{
-    /* max-width: 800px; */
-    margin-right: 100px;
     font-size: 18px;
+    margin: auto auto;
 }
 
 .pro-pic{
     width: 350px;
     height: 320px;
     object-fit: cover;
-    padding-right: 50px;
-    /* border: 3px solid rgb(100, 255, 218); */
+    display: block;
+    margin: auto auto;
+    padding-bottom: 15px;
+
   }
 
   /* Education */
@@ -188,13 +189,12 @@ a{
     font-weight: 500;
     line-height: 44px;
     color: white;
-    text-align: center;
     margin-bottom: 50px;
   }
 
   .edu-info{
     padding-bottom: 40px;
-    font-size: 20px;
+    padding-left: 250px;
   }
 
   ul >li{
@@ -203,16 +203,18 @@ a{
 
   .subject-info{
     text-align: left;
-    padding-left: 150px;
+    font-size: 16px;
+    font-weight: 350;
   }
 
 .school-head{
     padding-bottom: 10px;
+    text-align: left;
   }
 .edu-subtext{
     text-align: left;
-    padding-left: 150px;
 }
+
   /* My skills */
   .skills{
     padding-top: 100px;
@@ -290,7 +292,19 @@ a{
     font-weight: 400;
     line-height: 17px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
+}
+
+.proj-images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.proj-img-box{
+    padding-bottom: 50px;
 }
 
 /* Volunteering */
@@ -311,7 +325,6 @@ a{
 
 .volunteering-subhead{
     text-align: center;
-    padding-bottom: 50px;
     font-family:Clarkson, Helvetica, sans-serif;
 }
 
@@ -321,7 +334,7 @@ a{
     font-weight: 600;
     line-height: 35.2px;
     color: rgb(204, 214, 246);
-    margin-top: 50px;
+    margin-top:  30px;
     margin-bottom: 45px;
     text-align: center;
 }
@@ -329,12 +342,21 @@ a{
 .v-imgs{
     margin-bottom:20px;
     border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
 }
 .v-logos{
-    padding-right: 50px;
-}
-.img-iot{
-    padding-left: 60px;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
 }
 
 .v-info-container{
@@ -385,8 +407,8 @@ a{
     font-size: 20px;
     line-height: 33.6px;
     font-weight: 500;
-    padding-left: 250px;
-    padding-right: 250px;
+    display: block;
+    margin: auto auto;
 }
 
 .contact-menu{
@@ -415,3 +437,47 @@ a{
     font-size: 16px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    ._desktop{
+        display: none;
+    }
+
+    ._mobile{
+        display: block;
+    }
+
+    .start-text{
+        font-size: 16px;
+    }
+
+    .name-text{
+        font-size: 45px;
+        color:white;
+    }
+
+    .main-text{
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    .para-text{
+        font-size: 17px;
+    }
+
+    .text-container-home >div{
+        margin-bottom: 5px;
+    }
+
+    .edu-info{
+        padding-left: 50px;
+    }
+    .home{
+        margin-top: 20px;
+    }
+
+    .barcode-img{
+        margin-left: 10px;
+    }
+  }

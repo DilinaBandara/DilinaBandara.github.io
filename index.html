@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dilina Bandara</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       body {
         font-family: poppins;
-      }
+	}
     </style>
     <script
       src="https://kit.fontawesome.com/26815e322b.js"
@@ -25,29 +21,55 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-    <!--navigation-bar--->
-    <nav class="navbar">
-        <img src="images/barcode.gif" class="barcode-img" width="40px" height="50px"/>
-      <ul class="menu">
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="#about-section">About Me</a></li>
-        <li><a href="#education-section">Education</a></li>
-        <li><a href="#skills-section">Skills</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#volunteering-section">Volunteering</a></li>
-      </ul>
-      <!--Contact-->
-      <a href="#contact-section" class="contact-me">
-        Contact Me
-        <i class="fa-solid fa-angle-right"></i>
-      </a>
+	<header>
+    <nav class="navbar navbar-dark navbar-expand-lg main-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+			<img src="images/barcode.gif" class="barcode-img"/>
+		</a>
+        <button class="navbar-toggler ham-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education-section">Education</a>
+            </li>
+            <li class="nav-item">
+				<a class="nav-link" href="#skills-section">Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#projects-section">Projects</a>
+			</li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#volunteering-section">Volunteering</a>
+			</li>
+			<li class="nav-item _mobile">
+				<a class="nav-link contact-me" href="#volunteering-section">Contact
+					<i class="fa-solid fa-angle-right"></i>
+				</a>
+			</li>
+          </ul>
+        </div>
+	<!-- Contact-->
+		<a href="#contact-section" class="contact-me text-end _desktop">
+			Contact Me
+			<i class="fa-solid fa-angle-right"></i>
+		</a>
+      </div>
     </nav>
-
-    <!-- Home -->
+</header>
+    <!-- Home Section -->
     <section class="home" id="home-section">
       <div class="container home-space">
         <div class="row">
-          <div class="col-7">
+          <div class="col-lg-7 ">
             <div class="text-container-home">
               <div class="main-text">
                 <h1 class="start-text">Hello there, my name is</h1>
@@ -70,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 d-none d-lg-block">
             <pre class="center donut" id="d"></pre>
           </div>
         </div>
@@ -80,12 +102,12 @@
     <!-- About Me -->
     <section class="about-me" id="about-section">
       <div class="container">
-        <div class="about-head">About Me</div>
+        <div class="about-head text-center">About Me</div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4">
             <img class="pro-pic" src="images/pro-pic.png" />
           </div>
-          <div class="col-8">
+          <div class="col-lg-8">
             <p class="about-info">
               Hi, It's nice to meet you. Thank you for taking the time to visit
               my website. I'm currently a
@@ -113,18 +135,19 @@
     <!-- Education Section -->
     <section class="education" id="education-section">
       <div class="container text-end">
-        <div class="edu-head">Education</div>
-        
+        <div class="edu-head text-center">Education</div>
         <div class="edu-info">
-          <div class="row pt-4">
-            <div class="col-6">
-              <h3 class="school-head">Dharmaraja College Kandy(2022-2023)</h3>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+				<div class="school-head">
+					<h3>Dharmaraja College Kandy<br>(2022-2023)</h3>
+				  </div>
               <p class ="edu-subtext">Advance Level- COMMERCE</p>
             </div>
-            <div class="col-6 subject-info">
-              <h3>&nbsp;</h3>
+            <div class="col-lg-6 subject-info">
+              <!-- <h3>&nbsp;</h3> -->
               <ul style="list-style-type: none">
-                <li>Information Technology</li>
+                <li>IT</li>
                 <li>Accounting</li>
                 <li>Business Studies</li>
               </ul>
@@ -133,12 +156,14 @@
         </div>
         
         <div class="edu-info">
-          <div class="row pt-4">
-            <div class="col-6">
-              <h3 class="px-4 school-head">Springfield College Kandy (2019-2021)</h3>
+          <div class="row pt-3">
+            <div class="col-lg-6">
+				<div class="school-head">
+					<h3>Springfield College <br>(2019-2021)</h3>
+				  </div>
               <p class ="edu-subtext">Ordinary Level</p>
             </div>
-            <div class="col-6 subject-info">
+            <div class="col-lg-6 subject-info">
               <ul style="list-style-type: none">
                 <li>Maths - A</li>
                 <li>English - A</li>
@@ -159,55 +184,55 @@
     <!-- My skills -->
     <section class="skills" id="skills-section">
       <div class="container">
-        <div class="skills-head">Skills</div>
+        <div class="skills-head text-center">Skills</div>
         <h3 class="skills-subhead">
           Here are a few technologies I’ve been working with recently
         </h3>
 
         <div class="logo-container">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-6 col-md-6 col-lg-2">
               <div class="text-container">
                 <span class="colored-text skill-text">▹</span> HTML</br>
                 <img src="images/html-logo.jpg" class="skills-logo" />
               </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-6 col-md-6 col-lg-2">
               <div class="text-container">
                 <span class="colored-text">▹</span> CSS</br> 
                   <img src="images/css-logo.png" class="skills-logo" />
               </div>
 
             </div>
-            <div class="col-sm">
+            <div class="col-6 col-md-6 col-lg-2">
               <div class="text-container">
                 <span class="colored-text">▹</span> JavaScript</br>
                 <img src="images/JS.png" class="skills-logo" />
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-sm">
+            <div class="col-6 col-md-6 col-lg-2">
               <div class="text-container">
                 <span class="colored-text">▹</span> Bootstrap</br>
                 <img src="images/bootstrap-logo.png" class="skills-logo" />
               </div>
             </div>
-            <div class="col-sm">
+
+            <div class="col-6 col-md-6 col-lg-2">
               <div class="text-container">
                 <span class="colored-text">▹</span> Git</br>
                 <img src="images/git-logo.png" class="skills-logo" />
-              </div>
-            </div>
-            <div class="col-sm">
-              <div class="text-container">
-                <span class="colored-text">▹</span> GitHub</br>
-                <img src="images/github-logo.png" class="skills-logo" />
-              </div>
             </div>
           </div>
+
+          <div class="col-6 col-md-6 col-lg-2">
+            <div class="text-container">
+              <span class="colored-text">▹</span> GitHub</br>
+              <img src="images/github-logo.png" class="skills-logo" />
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -215,22 +240,22 @@
     <!-- Projects -->
     <section class="projects" id="projects-section">
       <div class="container">
-        <div class="projects-head">My Projects</div>
+        <div class="projects-head text-center">My Projects</div>
         <h3 class="skills-subhead">
           A few projects I've built myself
         </h3>
         <div class="row">
-          <div class="col-4 proj-img-box">
-            <img src="images/urban-clone.png" width="400px" height="200px">
+          <div class="col-md-6 col-lg-4 proj-img-box">
+            <img src="images/urban-clone.png" class="proj-images">
             <div class="proj-img-text">Urban.lk Clone</div>
           </div>
           
-          <div class="col-4 project-img-box">
-            <img src="images/portfolio-site.png" width="400px" height="200px">
+          <div class="col-md-6 col-lg-4 proj-img-box">
+            <img src="images/portfolio-site.png" class="proj-images">
             <div class="proj-img-text">My Portfolio Website</div>
           </div>
-          <div class="col-4 project-img-box">
-            <img src="images/supreme-clone.png" width="400px" height="200px">
+          <div class="col-md-6 col-lg-4 proj-img-box">
+            <img src="images/supreme-clone.png" class="proj-images">
             <div class="proj-img-text">Supreme.com Clone</div>
           </div>
         </div>
@@ -240,20 +265,19 @@
     <!-- Volunteering -->
     <div class="volunteering" id="volunteering-section">
       <div class="container">
-        <div class="volunteering-head">Volunteer Work</div>
+        <div class="volunteering-head text-center">Volunteer Work</div>
           <h3 class="volunteering-subhead">
             Volunteer work I've engaged in so far
           </h3>
+          <hr>
           <div class="v-info-container">
-            <h2 class="v-head">
               <img src="images/ack-logo.jpg" class="v-logos" height="60px" width="170px">
-              American Corner Kandy</h2>
+              <h2 class="v-head">American Corner Kandy</h2>
             <div class="row">
-              <div class="col-6">
-                <img src="images/ack.png" width="425px" height="450px">
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <div class="col-lg-6">
+                <img src="images/ack.png" class="v-imgs">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6">
                 <p class="v-description"> As a member of the Youth Forum- American Corner Kandy, I had the pleasure of volunteering at hospitals & children’s homes to be of service during these challenging times in the country. 
                 </p>
 
@@ -263,17 +287,15 @@
           </div>
           <hr>
           <div class="v-info-container">
-            <h2 class="v-head">
-              <img src="images/stemup-logo.png" class="v-logos" height="50px" width="150px">
-              STEMUP Education Foundation
-              </h2>
+              <img src="images/stemup-logo.png" class="v-logos">
+              <h2 class="v-head">STEMUP Education Foundation</h2>
               <div class="row">
-              <div class="col-6">
-                <img class="v-imgs" src="images/stemup.png" width="500px" height="200">
-                <img class="v-imgs img-iot" src="images/iot.jpg" width="400px" height="350">
+              <div class="col-lg-6">
+                <img class="v-imgs" src="images/stemup.png">
+                <img class="v-imgs img-iot" src="images/iot.jpg">
               </div>
               
-              <div class="col-6">
+              <div class="col-lg-6">
                 <p class="v-description">By volunteerting at the STEMUP Educational Foundation, I received the opportunity to organize both virtual 
                   and physical events for over 150+ youngsters and school students focusing on assisting them be exposed to the IT industry at an early age.
                 </p>
@@ -295,11 +317,11 @@
             <h2 class="v-head">
               Extra Work</h2>
             <div class="row">
-              <div class="col-6">
-                <img class="v-imgs" src="images/career-g.png" width="450px" height="250">
+              <div class="col-lg-6">
+                <img class="v-imgs" src="images/career-g.png" width="400px" height="250">
                 <img class="v-imgs" src="images/sef.png" width="350px" height="250">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6">
                 <p class="v-description">Due to the digital divide between the IT industry and schools, I connected with many industry professionals and organized webinars
                   to educate and guide students to build the necessary entry level skills for the industry.
                 </p>
@@ -321,7 +343,7 @@
     <section class="contact" id="contact-section">
       <div class="container">
         <h3 class="contact-head">Lets Connect!</h3>
-        <p class="contact-desc">I'm always open to new opportunities and conversations, you can get in touch 
+        <p class="contact-desc">I'm always open to new opportunities and conversations,<br> you can get in touch 
           with me by reaching out through my socials!
         </p>
         <div class="contact-menu">
@@ -350,20 +372,6 @@
     <!-- Donut -->
     <script src="js/donut.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
