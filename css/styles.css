@@ -480,4 +480,39 @@ a{
     .barcode-img{
         margin-left: 10px;
     }
+
+    .about-info{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .proj-img-text{
+        padding-top: 12px;
+    }
+
+    .proj-img-box{
+        padding-bottom: 55px;
+    }
+
+    .v-description{
+        font-size: 14px;
+        padding-top: 12px;
+    }
+    
+    .volunteering{
+        padding-top: 100px;
+    }
+
+    .key-head{
+        font-size: 20px;
+    }
+
+    .key-points{
+        font-size: 14px;
+    }
+
+    .contact-head{
+        font-size: 50px;
+        padding-bottom: 5px;
+    }
   }
