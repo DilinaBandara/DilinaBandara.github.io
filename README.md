@@ -13,6 +13,7 @@ Responsive portfolio website built from scratch using HTML5/CSS3/JavaScript/Boot
 +  Github
 
 ## Learning outcomes
++ Building a website from scratch
 + Responsive web design
 + User interface design
 + Use Bootstrap components such as grids, buttons, and forms to quickly create a responsive website
