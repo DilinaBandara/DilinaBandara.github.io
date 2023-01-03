@@ -305,7 +305,22 @@ a{
 
 .proj-img-box{
     padding-bottom: 50px;
+    transition: 0.3s;
+    
 }
+
+.proj-img-box:hover{
+    transform: translate(0, -10px);
+}
+
+.proj-link{
+    text-decoration: none;
+    color: rgb(136, 146, 176);
+}
+
+.proj-link:hover {
+    color: white;
+  }
 
 /* Volunteering */
 
